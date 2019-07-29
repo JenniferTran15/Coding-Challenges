@@ -24,7 +24,7 @@ class Image
             @image_blur_array[c_index[0] - 1][c_index[1]] = 1 if c_index[0] > 0
             @image_blur_array[c_index[0]][c_index[1] - 1] = 1 if c_index[1] > 0
             @image_blur_array[c_index[0] + 1][c_index[1]] = 1 if c_index[0] < @image_blur_array[c_index[0]].length - 1
-            @image_blur_array[c_index[0]][c_index[1] + 1] = 1 if c_index[1] < @image_blur_array.count - 1
+            @image_blur_array[c_index[0]][c_index[1] + 1] = 1 if c_index[1] < @image_blur_array.length - 1
         end
     end
 end
